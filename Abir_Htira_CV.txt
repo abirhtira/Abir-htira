@@ -1,0 +1,108 @@
+ABIR HTIRA
+Junior Cybersecurity & Network Security Engineer
+
+Contact
+Phone: +216 58 279 010
+Email: abirhtiraa@gmail.com
+LinkedIn: linkedin.com/in/abirhtira
+GitHub: github.com/abirhtira
+Location: Tunis, Tunisia
+
+Professional Summary
+Cybersecurity Engineer (ENIG, 2026) targeting a Junior Cybersecurity Engineer / SOC Analyst role. Designed, deployed and validated a full SOC (SIEM Wazuh, SOAR, TheHive, Cortex, MISP, Palo Alto NGFW) in a virtualized (VMware) and containerized (Docker) Linux environment: security assessments and attack-scenario testing mapped to MITRE ATT&CK, network traffic analysis and hardening, KPI tracking (MTTD, MTTR, false-positive rate). Built Python/REST API automation for incident response. Skilled in secure networking (VLAN, firewalling, VPN), Windows Server/Active Directory, cloud security (Oracle Cloud) and Scrum. Strong analytical, investigative and communication skills, with documentation aligned to ISO 27001 practices.
+
+Professional Experience
+Cybersecurity Engineer — Final-Year Internship (PFE): SOC
+Innov Alliance Tech (IAT) | Tunis, Tunisia | Feb 2026 – Jul 2026
+
+- Designed and deployed a complete cybersecurity system (SIEM, SOAR, Threat Intelligence, IDS/IPS, NGFW) using Docker Compose on VMware, across a segmented network (SOC, DMZ, Active Directory), delivered in Scrum over 6 sprints.
+- Built and hardened the test infrastructure on VMware (Linux VMs, Windows Server/Active Directory, Kali Linux) and the containerized SOC stack with Docker Compose.
+- Ran security assessments across 5 attack scenarios from Kali Linux (Nmap reconnaissance, DoS, SSH brute force, DNS C2/sinkhole, malware IOC), mapped to MITRE ATT&CK, validating the full detection, correlation and response chain end to end.
+- Analyzed network traffic and tracked KPIs (MTTD, MTTR, automation rate, false-positive rate, confusion matrix) via Grafana/Prometheus/Loki; investigated and corrected 3+ defects found during testing (IOC loading, MTTR calculation, IPS threshold), with incremental validation of each fix.
+- Developed a Python SOAR orchestrator (REST API, webhooks, IOC cache, IPS blocking engine, TheHive-to-MISP feedback loop), cutting manual triage effort and speeding incident response.
+- Deployed SIEM Wazuh 4.14 (agents, Wazuh Indexer/OpenSearch), integrated TheHive 5, Cortex and MISP, and configured a Palo Alto PA-220 NGFW/IPS: custom detection rules, case management, IOC enrichment, security policies, NAT and VPN.
+
+Engineering Intern — Radio Networks
+Tunisie Télécom | Tunis | Jul 2025 – Sep 2025
+- Analyzed radio KPIs and quality of service (QoS) across 3G/4G/5G mobile network infrastructure.
+
+Technician Intern — Network Infrastructure
+Tunisie Télécom | Gabès | Aug 2024 – Sep 2024
+- Installed, maintained and supervised network equipment and infrastructure.
+
+Education
+Engineering Degree — Communications & Networks Engineering
+École Nationale d'Ingénieurs de Gabès (ENIG) | 2023 – 2026
+
+Preparatory Cycle — Physics–Chemistry
+IPEIG — Institut Préparatoire aux Études d'Ingénieurs de Gabès | 2019 – 2022
+
+Projects
+Intelligent SOC Platform
+Automated Security Incident Detection and Response
+Final-Year Internship / PFE | Innov Alliance Tech | Feb 2026 – Jul 2026
+Technologies: Wazuh, TheHive, Cortex, MISP, Palo Alto PA-220, Docker, Docker Compose, VMware, Linux, Windows Server, Active Directory, Kali Linux, Python, REST APIs, Grafana, Prometheus, Loki
+
+Architecture:
+Palo Alto PA-220 → Wazuh SIEM → Detection & Correlation → TheHive → Cortex → MISP → Automated Incident Response
+
+Validated scenarios from Kali Linux:
+- Nmap reconnaissance
+- DoS
+- SSH brute force
+- DNS C2 / sinkhole
+- Malware IOC
+Illustrated and mapped to MITRE ATT&CK.
+
+Academic Projects
+AI/ML Attack & Anomaly Detection
+Technologies: Random Forest, LSTM, Wireshark/TShark, GNS3
+
+VoIP/SMS QoS Evaluation
+Technologies: SIP/RTP, SMPP, iPerf3, tc/netem, DSCP, Wireshark
+
+Skills
+Cybersecurity: SIEM, SOAR, SOC / Blue Team, Incident Response, Threat Intelligence, IOC Management, Detection Engineering, IDS/IPS, EDR/XDR, Security Automation, MITRE ATT&CK
+Network Security: TCP/IP, LAN/WAN, Routing & Switching, VLAN, Network Segmentation, Firewalling, NAT, VPN, DMZ, DNS/DHCP, Network Traffic Analysis, Security Policies, Network Hardening
+Systems & Virtualization: Linux, VMware, Docker, Docker Compose, Windows Server, Active Directory, Git/GitHub, DevSecOps
+Scripting & Automation: Python, REST APIs, Webhooks, SOAR automation
+Security Testing & Hardening: Security assessments, Penetration testing, Attack simulation, Kali Linux, Nmap, MITRE ATT&CK, Hardening, KPI tracking, Grafana, Prometheus, Loki, Scrum
+Networking & Network Traffic: TCP/IP, Network traffic analysis, VLAN, DNS/DHCP, Firewalling, Security policies, NAT, VPN, Network segmentation, DMZ
+Cloud & AI/ML: Oracle Cloud security, Random Forest, LSTM, Anomaly detection, False-positive reduction
+
+Tools & Technologies
+SOC & Security: Wazuh, TheHive, Cortex, MISP
+Network Security: Palo Alto PA-220, FortiGate, Wireshark, TShark
+Infrastructure: Linux, Windows Server, Active Directory, VMware
+Automation: Python, REST APIs, Webhooks, Docker, Docker Compose
+Monitoring: Grafana, Prometheus, Loki
+Security Testing: Kali Linux, Nmap, GNS3
+
+Certifications
+Cisco CyberOps
+CCNA 1
+CCNA 2
+Fortinet Threat Landscape 3.0
+Fortinet Network Security
+Oracle AI Fundamentals
+Oracle Cloud Infrastructure
+Certified Phishing Prevention Specialist
+
+Languages
+Arabic — Native
+French — B2
+English — B2
+
+Soft Skills
+Analytical thinking
+Investigations
+Cross-team communication
+Technical reporting
+
+Areas of Interest
+Cybersecurity Engineer
+SOC / Blue Team • Security Operations • Incident Response
+Network Security Engineer
+Network Security • Firewall • Infrastructure Security • Secure Networking
+Security Operations
+SIEM • Detection • Threat Intelligence • Security Automation
