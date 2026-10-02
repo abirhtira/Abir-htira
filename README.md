@@ -34,7 +34,9 @@ python -m http.server 8000
 
 - Modifiez le contenu dans `index.html`.
 - Ajustez le style dans `style.css`.
-- Ajoutez éventuellement votre CV dans `assets/cv/`.
+- Pour changer le contenu du CV PDF, modifiez la section `cvData` dans `generate_cv_pdf.js`.
+- Générer le PDF à nouveau avec : `node generate_cv_pdf.js`.
+- Le fichier PDF public du site sera dans `assets/cv/resume_BankABC.pdf`.
 
 ## Auteur
 
