@@ -531,12 +531,15 @@ a {
 
 .cert-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
-.cert-intro {
-  max-width: 600px;
-  margin: 14px auto 0;
-  color: var(--muted);
+.certifications.section-block {
+  padding: 64px 0;
+}
+
+.certifications .section-heading.centered {
+  margin-bottom: 24px;
 }
 
 .certificate-filters {
@@ -544,7 +547,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 0 0 16px;
+  margin: 0 0 10px;
 }
 
 .certificate-filter {
@@ -578,7 +581,7 @@ a {
 }
 
 .certificate-count {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   color: var(--muted);
   font-size: 0.88rem;
   text-align: center;
@@ -587,8 +590,8 @@ a {
 .certificate-card {
   display: flex;
   flex-direction: column;
-  min-height: 260px;
-  padding: 22px;
+  min-height: 150px;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: 20px;
   background: linear-gradient(145deg, rgba(15, 35, 56, 0.92), rgba(11, 25, 41, 0.9));
@@ -606,53 +609,14 @@ a {
   display: none;
 }
 
-.certificate-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.certificate-icon {
-  display: inline-grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  background: var(--primary-soft);
-  color: var(--primary);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-}
-
-.certificate-category {
-  padding: 6px 10px;
-  border: 1px solid rgba(103, 230, 255, 0.18);
-  border-radius: 999px;
-  color: var(--primary);
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
 .certificate-card h3 {
-  margin: 0 0 8px;
-  font-size: 1.1rem;
+  margin: 0 0 16px;
+  font-size: 1rem;
   line-height: 1.4;
-}
-
-.certificate-card p {
-  margin: 0 0 22px;
-  color: var(--muted);
-  font-size: 0.88rem;
 }
 
 .certificate-actions {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px 16px;
   margin-top: auto;
 }
 
@@ -660,17 +624,6 @@ a {
   min-height: 40px;
   padding: 0 14px;
   font-size: 0.84rem;
-}
-
-.certificate-download {
-  color: var(--muted);
-  font-size: 0.84rem;
-  font-weight: 600;
-}
-
-.certificate-download:hover,
-.certificate-download:focus-visible {
-  color: var(--primary);
 }
 
 .expertise-grid,
