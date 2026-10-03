@@ -263,8 +263,8 @@ a {
 
 .portrait-card {
   position: relative;
-  width: min(100%, 370px);
-  height: 460px;
+  width: min(100%, 300px);
+  height: 380px;
   overflow: hidden;
   border: 1px solid rgba(174, 216, 255, 0.26);
   border-radius: 30px;
@@ -1002,9 +1002,9 @@ a {
   }
 
   .portrait-card {
-    width: min(100%, 370px);
-    height: min(112vw, 460px);
-    min-height: 340px;
+    width: min(100%, 270px);
+    height: min(100vw, 340px);
+    min-height: 300px;
     align-self: center;
   }
 }
