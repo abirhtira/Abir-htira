@@ -6,8 +6,9 @@ Portfolio personnel d'un ingénieur cybersécurité, conçu comme une landing pa
 
 - `index.html` : page d'accueil et sections du portfolio
 - `style.css` : styles visuels et responsive design
-- `script.js` : scripts JavaScript pour la date et interactions légères
-- `assets/` : dossiers pour les images, icônes et CV
+- `script.js` : scripts JavaScript pour la date et le filtre des certificats
+- `assets/cv/` : CV au format PDF
+- `assets/certificates/` : certificats au format PDF
 
 ## Aperçu
 
@@ -16,7 +17,8 @@ Le site présente :
 - un profil professionnel détaillé
 - les compétences clés en cybersécurité
 - l'expérience et les projets significatifs
-- les certifications et les moyens de contact
+- les certifications PDF, filtrables par domaine et disponibles à la consultation ou au téléchargement
+- les moyens de contact
 
 ## Lancer le projet localement
 
