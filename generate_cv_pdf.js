@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const projectRoot = __dirname;
-const pdfPath = path.join(projectRoot, 'assets', 'cv', 'resume_BankABC.pdf');
+const pdfPath = path.join(projectRoot, 'assets', 'cv', 'Resume.pdf');
 
 const cvData = {
   name: 'Abir Htira',
