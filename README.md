@@ -17,6 +17,7 @@ Le site présente :
 - un profil professionnel détaillé
 - les compétences clés en cybersécurité
 - une section dédiée « Featured Project — SOC & Network Security Platform »
+- la [documentation technique SOC](docs/soc-platform.md), liée depuis la rubrique Documentation / GitHub du projet
 - l'expérience et les autres projets significatifs
 - les certifications PDF, filtrables par domaine et disponibles à la consultation ou au téléchargement
 - les moyens de contact
@@ -24,6 +25,8 @@ Le site présente :
 ## Section SOC Platform
 
 La présentation du projet SOC est organisée en 14 rubriques : Project Overview, Security Architecture, Technology Stack, Detection & Correlation, SOAR Automation, Threat Intelligence, Active Response / IPS, Security Monitoring, Security Scenarios, MITRE ATT&CK, KPIs & Performance, Technical Implementation, Lessons Learned et Documentation / GitHub.
+
+La documentation technique détaillée est disponible dans [`docs/soc-platform.md`](docs/soc-platform.md). Les adresses internes ont été omises et le dépôt ne contient pas les configurations opérationnelles ni les secrets du laboratoire.
 
 ## Lancer le projet localement
 
