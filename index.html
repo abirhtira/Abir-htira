@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Abir's portfolio, a cybersecurity engineer specialized in offensive security, SOC, cloud, and governance."
+      content="Abir's cybersecurity portfolio featuring a SOC and network security platform for monitoring, detection, threat intelligence, and automated response."
     />
     <title>Abir | Cybersecurity Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=portrait-alignment" />
+    <link rel="stylesheet" href="style.css?v=soc-platform" />
   </head>
   <body>
     <div class="page-shell">
@@ -29,7 +29,7 @@
             <a href="#apropos">About</a>
             <a href="#competences">Skills</a>
             <a href="#experience">Experience</a>
-            <a href="#projets">Projects</a>
+            <a href="#soc-platform">SOC Platform</a>
             <a href="#certifications">Certificates</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -50,7 +50,7 @@
               </p>
 
               <div class="hero-actions">
-                <a class="btn btn-primary" href="#projets">View My Projects</a>
+                <a class="btn btn-primary" href="#soc-platform">View SOC Platform</a>
                 <a class="btn btn-secondary" href="assets/cv/Resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
                 <a class="btn btn-secondary" href="assets/cv/Resume.pdf" download>Download Resume</a>
                 <a class="btn btn-secondary" href="https://github.com/abirhtira" target="_blank" rel="noreferrer">GitHub</a>
@@ -177,284 +177,190 @@
           </div>
         </section>
 
-        <section id="projets" class="projects section-block">
+        <section id="soc-platform" class="projects section-block soc-platform">
           <div class="container">
             <div class="section-heading centered">
               <span class="eyebrow">Featured Project</span>
-              <h2>Intelligent SOC and Network Defense Lab</h2>
+              <h2>Featured Project — SOC &amp; Network Security Platform</h2>
+              <p class="soc-intro">Une plateforme intégrée pour centraliser les événements de sécurité, accélérer les investigations et coordonner la réponse réseau.</p>
             </div>
 
-            <div class="feature-project">
-              <div class="project-banner">End-to-End Security Monitoring, Detection &amp; Automated Response</div>
+            <nav class="soc-toc" aria-label="SOC Platform sections">
+              <ol>
+                <li><a href="#soc-overview">01 — Project Overview</a></li>
+                <li><a href="#soc-architecture">02 — Security Architecture</a></li>
+                <li><a href="#soc-stack">03 — Technology Stack</a></li>
+                <li><a href="#soc-detection">04 — Detection &amp; Correlation</a></li>
+                <li><a href="#soc-soar">05 — SOAR Automation</a></li>
+                <li><a href="#soc-intelligence">06 — Threat Intelligence</a></li>
+                <li><a href="#soc-response">07 — Active Response / IPS</a></li>
+                <li><a href="#soc-monitoring">08 — Security Monitoring</a></li>
+                <li><a href="#soc-scenarios">09 — Security Scenarios</a></li>
+                <li><a href="#soc-mitre">10 — MITRE ATT&amp;CK</a></li>
+                <li><a href="#soc-kpis">11 — KPIs &amp; Performance</a></li>
+                <li><a href="#soc-implementation">12 — Technical Implementation</a></li>
+                <li><a href="#soc-lessons">13 — Lessons Learned</a></li>
+                <li><a href="#soc-documentation">14 — Documentation / GitHub</a></li>
+              </ol>
+            </nav>
 
-              <div class="project-split">
-                <div class="feature-pane">
-                  <h3>Cybersecurity side</h3>
-                  <div class="flow-stack">
-                    <span>Security Events</span>
-                    <span class="arrow">↓</span>
-                    <span>Wazuh SIEM</span>
-                    <span class="arrow">↓</span>
-                    <span>Detection &amp; Correlation</span>
-                    <span class="arrow">↓</span>
-                    <span>TheHive</span>
-                    <span class="arrow">↓</span>
-                    <span>Cortex + MISP</span>
-                    <span class="arrow">↓</span>
-                    <span>Threat Intelligence</span>
-                    <span class="arrow">↓</span>
-                    <span>Automated Response</span>
+            <div class="soc-details">
+              <section id="soc-overview" class="soc-detail">
+                <h3><span>01</span> — Project Overview</h3>
+                <div class="soc-overview-grid">
+                  <article class="soc-panel">
+                    <h4>Problem</h4>
+                    <p>Les environnements IT génèrent un volume important d'événements de sécurité provenant des endpoints, serveurs, firewalls et systèmes réseau. Sans centralisation, corrélation et automatisation, l'analyse des incidents devient plus lente et moins efficace.</p>
+                  </article>
+                  <article class="soc-panel">
+                    <h4>Objective</h4>
+                    <p>Concevoir, déployer et sécuriser une plateforme SOC capable de centraliser les événements, détecter les comportements suspects, enrichir les observables, automatiser le traitement des alertes et déclencher des mécanismes de réponse.</p>
+                  </article>
+                </div>
+                <div class="soc-panel">
+                  <h4>Solution</h4>
+                  <ol class="soc-flow" aria-label="Security event investigation and response flow">
+                    <li>Security Events</li><li>Wazuh SIEM</li><li>Detection &amp; Correlation</li>
+                    <li>Wazuh → TheHive</li><li>MISP + Cortex</li><li>Investigation / Enrichment</li>
+                    <li>Automated Response</li><li>Palo Alto IPS / AUTO-BLOCK</li>
+                  </ol>
+                </div>
+                <div class="soc-panel">
+                  <h4>Key capabilities</h4>
+                  <ul class="soc-capabilities">
+                    <li>Centralized security monitoring</li><li>Log collection &amp; normalization</li>
+                    <li>Detection &amp; correlation</li><li>MITRE ATT&amp;CK mapping</li>
+                    <li>Threat Intelligence enrichment</li><li>SOAR automation</li><li>IOC extraction</li>
+                    <li>Incident management</li><li>Active IPS response</li><li>Security dashboards</li>
+                    <li>MFA / RBAC</li><li>SOC performance measurement</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section id="soc-architecture" class="soc-detail">
+                <h3><span>02</span> — Security Architecture</h3>
+                <p>Une architecture segmentée sépare les réseaux SOC, attaquant, DMZ et interne. Le Palo Alto PA-220 assure le contrôle des flux entre les zones.</p>
+                <div class="architecture-grid">
+                  <div class="architecture-box">INTERNET</div>
+                  <div class="architecture-arrow" aria-hidden="true">▼</div>
+                  <div class="architecture-box large">Palo Alto PA-220<br /><small>NGFW / IPS / NAT</small></div>
+                  <div class="architecture-arrow" aria-hidden="true">▼</div>
+                  <div class="architecture-row">
+                    <div class="architecture-box small">SOC Network</div>
+                    <div class="architecture-box small">Attacker Network</div>
+                    <div class="architecture-box small">Internal / DMZ</div>
+                  </div>
+                  <div class="architecture-row">
+                    <div class="architecture-box small">Wazuh / SOAR<br /><small>Monitoring</small></div>
+                    <div class="architecture-box small">Kali Linux<br /><small>Security Testing</small></div>
+                    <div class="architecture-box small">Windows Server<br /><small>AD / DNS</small></div>
                   </div>
                 </div>
+                <div class="tag-row"><span>Firewall</span><span>IPS</span><span>NAT</span><span>VLAN</span><span>Segmentation</span><span>DMZ</span><span>VPN</span></div>
+              </section>
 
-                <div class="feature-pane">
-                  <h3>Network Security side</h3>
-                  <div class="flow-stack">
-                    <span>Internet</span>
-                    <span class="arrow">↓</span>
-                    <span>Palo Alto PA-220</span>
-                    <span class="arrow">↓</span>
-                    <span>Firewall / IPS / NAT</span>
-                    <span class="arrow">↓</span>
-                    <span>Network Segmentation</span>
-                    <span class="arrow">↓</span>
-                    <span>SOC / DMZ / Internal Networks</span>
-                    <span class="arrow">↓</span>
-                    <span>Windows / Linux / AD / DNS</span>
-                  </div>
+              <section id="soc-stack" class="soc-detail">
+                <h3><span>03</span> — Technology Stack</h3>
+                <div class="tool-grid">
+                  <article class="tool-card"><h4>SOC &amp; Security</h4><p>Wazuh 4.14 • Wazuh Indexer (OpenSearch) • TheHive • Cortex • MISP</p></article>
+                  <article class="tool-card"><h4>Network Security</h4><p>Palo Alto PA-220 • FortiGate • Wireshark • TShark</p></article>
+                  <article class="tool-card"><h4>Infrastructure</h4><p>Linux • Windows Server • Active Directory • VMware</p></article>
+                  <article class="tool-card"><h4>Automation</h4><p>Python • REST API • Webhooks • Docker • Docker Compose</p></article>
+                  <article class="tool-card"><h4>Monitoring</h4><p>Grafana • Prometheus • Loki</p></article>
+                  <article class="tool-card"><h4>Security Testing</h4><p>Kali Linux • Nmap • GNS3</p></article>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
+              </section>
 
-        <section class="section-block">
-          <div class="container">
-            <div class="section-heading centered">
-              <span class="eyebrow">Network Security Architecture</span>
-              <h2>Secure Network Architecture</h2>
-            </div>
+              <section id="soc-detection" class="soc-detail">
+                <h3><span>04</span> — Detection &amp; Correlation</h3>
+                <p>Wazuh 4.14 collecte et normalise les journaux des endpoints, serveurs et équipements réseau. Wazuh Indexer, basé sur OpenSearch, indexe les événements ; des règles de détection personnalisées et leur corrélation font remonter les activités suspectes au SOC.</p>
+                <div class="tag-row"><span>Event collection</span><span>Normalization</span><span>Custom rules</span><span>Correlation</span><span>Alert triage</span></div>
+              </section>
 
-            <div class="architecture-grid">
-              <div class="architecture-box">INTERNET</div>
-              <div class="architecture-arrow">▼</div>
-              <div class="architecture-box large">Palo Alto PA-220<br /><small>NGFW / IPS / NAT</small></div>
-              <div class="architecture-arrow">▼</div>
-              <div class="architecture-row">
-                <div class="architecture-box small">SOC Network</div>
-                <div class="architecture-box small">Attacker Net.</div>
-                <div class="architecture-box small">Internal / DMZ</div>
-              </div>
-              <div class="architecture-row lower-row">
-                <div class="architecture-box small">Wazuh / SOAR<br /><small>Monitoring</small></div>
-                <div class="architecture-box small">Kali Linux<br /><small>Security Testing</small></div>
-                <div class="architecture-box small">Windows Server<br /><small>AD / DNS</small></div>
-              </div>
-            </div>
+              <section id="soc-soar" class="soc-detail">
+                <h3><span>05</span> — SOAR Automation</h3>
+                <p>Un orchestrateur Python relie Wazuh, TheHive, MISP et le firewall via des API REST et des webhooks. Il automatise les tâches répétitives d'enrichissement et de gestion de cas, avec un cache IOC et une boucle de retour TheHive vers MISP.</p>
+                <div class="ops-grid">
+                  <article class="process-card"><h4>Receive</h4><p>Traiter les alertes et observables transmis par le SIEM.</p></article>
+                  <article class="process-card"><h4>Enrich</h4><p>Interroger les sources de Threat Intelligence et conserver un cache IOC.</p></article>
+                  <article class="process-card"><h4>Coordinate</h4><p>Créer et enrichir les cas TheHive, puis déclencher les actions de réponse prévues.</p></article>
+                </div>
+              </section>
 
-            <div class="badge-row">
-              <span>Firewall</span>
-              <span>IPS</span>
-              <span>NAT</span>
-              <span>Segmentation</span>
-              <span>DMZ</span>
-              <span>VPN</span>
-              <span>Monitoring</span>
-            </div>
-          </div>
-        </section>
+              <section id="soc-intelligence" class="soc-detail">
+                <h3><span>06</span> — Threat Intelligence</h3>
+                <p>MISP centralise les indicateurs de compromission et Cortex exécute des analyses d'observables. Le contexte enrichi est associé aux alertes et aux investigations dans TheHive.</p>
+                <div class="tag-row"><span>IOC extraction</span><span>MISP</span><span>Cortex</span><span>TheHive</span><span>Context enrichment</span></div>
+              </section>
 
-        <section class="section-block">
-          <div class="container">
-            <div class="section-heading centered">
-              <span class="eyebrow">SOC Operations</span>
-              <h2>Security Operations</h2>
-            </div>
+              <section id="soc-response" class="soc-detail">
+                <h3><span>07</span> — Active Response / IPS</h3>
+                <p>La chaîne de réponse relie les alertes validées aux mécanismes de blocage du Palo Alto PA-220. Les règles NGFW/IPS et les politiques réseau permettent le confinement des indicateurs malveillants dans le laboratoire.</p>
+                <div class="soc-response-flow"><span>Correlated alert</span><span aria-hidden="true">→</span><span>IOC validation</span><span aria-hidden="true">→</span><span>Firewall block rule</span></div>
+              </section>
 
-            <div class="ops-grid">
-              <article class="process-card">
-                <h3>Collect</h3>
-                <p>Logs and security events from network and endpoints.</p>
-              </article>
-              <article class="process-card">
-                <h3>Detect</h3>
-                <p>Identify suspicious activity using SIEM rules and event correlation.</p>
-              </article>
-              <article class="process-card">
-                <h3>Investigate</h3>
-                <p>Analyze alerts, network traffic and indicators of compromise.</p>
-              </article>
-              <article class="process-card">
-                <h3>Enrich</h3>
-                <p>Use Threat Intelligence to investigate suspicious indicators.</p>
-              </article>
-              <article class="process-card">
-                <h3>Respond</h3>
-                <p>Automate containment and response actions.</p>
-              </article>
-              <article class="process-card">
-                <h3>Monitor</h3>
-                <p>Track MTTD, MTTR, automation and detection performance.</p>
-              </article>
-            </div>
-          </div>
-        </section>
+              <section id="soc-monitoring" class="soc-detail">
+                <h3><span>08</span> — Security Monitoring</h3>
+                <p>Les tableaux de bord Grafana s'appuient sur Prometheus et Loki pour visualiser les événements, les alertes, l'activité de réponse et les indicateurs de performance SOC.</p>
+                <div class="tag-row"><span>Grafana dashboards</span><span>Prometheus</span><span>Loki</span><span>Security events</span><span>Response visibility</span></div>
+              </section>
 
-        <section class="section-block">
-          <div class="container">
-            <div class="section-heading centered">
-              <span class="eyebrow">Network Security Operations</span>
-              <h2>Network Security</h2>
-            </div>
+              <section id="soc-scenarios" class="soc-detail">
+                <h3><span>09</span> — Security Scenarios</h3>
+                <div class="table-wrap">
+                  <table class="security-table">
+                    <thead><tr><th>Scenario</th><th>Objective</th><th>Security Area</th></tr></thead>
+                    <tbody>
+                      <tr><td>Nmap reconnaissance</td><td>Detect reconnaissance activity</td><td>Network Security</td></tr>
+                      <tr><td>DoS</td><td>Detect abnormal traffic</td><td>Network Security / SOC</td></tr>
+                      <tr><td>SSH brute force</td><td>Detect authentication attacks</td><td>SOC</td></tr>
+                      <tr><td>DNS C2 / sinkhole</td><td>Detect suspicious DNS behavior</td><td>Network Security / SOC</td></tr>
+                      <tr><td>Malware IOC</td><td>Detect malicious indicators</td><td>Threat Intelligence</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
 
-            <div class="ops-grid">
-              <article class="process-card">
-                <h3>Traffic Analysis</h3>
-                <p>Analyze network communications using Wireshark, TShark and iPerf3.</p>
-              </article>
-              <article class="process-card">
-                <h3>Firewall Security</h3>
-                <p>Configure and analyze NGFW security policies, NAT and IPS.</p>
-              </article>
-              <article class="process-card">
-                <h3>Network Segmentation</h3>
-                <p>Design segmented environments using VLAN, DMZ and security zones.</p>
-              </article>
-              <article class="process-card">
-                <h3>Infrastructure Security</h3>
-                <p>Work with Linux, Windows Server, Active Directory and DNS.</p>
-              </article>
-            </div>
-          </div>
-        </section>
+              <section id="soc-mitre" class="soc-detail">
+                <h3><span>10</span> — MITRE ATT&amp;CK</h3>
+                <p>Les scénarios de reconnaissance, de déni de service, de force brute SSH, de DNS C2 et d'IOC malware sont analysés et associés aux comportements ATT&amp;CK pertinents pour structurer les détections et les comptes rendus d'incident.</p>
+                <div class="tag-row"><span>Scenario-based mapping</span><span>Detection coverage</span><span>Incident reporting</span></div>
+              </section>
 
-        <section class="section-block">
-          <div class="container">
-            <div class="section-heading centered">
-              <span class="eyebrow">Security Testing</span>
-              <h2>Security Assessment &amp; Attack Simulation</h2>
-            </div>
+              <section id="soc-kpis" class="soc-detail">
+                <h3><span>11</span> — KPIs &amp; Performance</h3>
+                <p>Les métriques suivies donnent une vue mesurable de la qualité de détection et de la réactivité du dispositif.</p>
+                <div class="ops-grid">
+                  <article class="process-card"><h4>MTTD</h4><p>Mean Time to Detect</p></article>
+                  <article class="process-card"><h4>MTTR</h4><p>Mean Time to Respond</p></article>
+                  <article class="process-card"><h4>Detection quality</h4><p>False-positive rate and confusion matrix</p></article>
+                  <article class="process-card"><h4>Automation rate</h4><p>Part des actions de traitement automatisées</p></article>
+                </div>
+              </section>
 
-            <div class="table-wrap">
-              <table class="security-table">
-                <thead>
-                  <tr>
-                    <th>Scenario</th>
-                    <th>Objective</th>
-                    <th>Security Area</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Nmap Reconnaissance</td>
-                    <td>Detect reconnaissance</td>
-                    <td>Network Security</td>
-                  </tr>
-                  <tr>
-                    <td>DoS</td>
-                    <td>Detect abnormal traffic</td>
-                    <td>Network Security / SOC</td>
-                  </tr>
-                  <tr>
-                    <td>SSH Brute Force</td>
-                    <td>Detect authentication attacks</td>
-                    <td>SOC</td>
-                  </tr>
-                  <tr>
-                    <td>DNS C2</td>
-                    <td>Detect suspicious DNS behavior</td>
-                    <td>Network Security / SOC</td>
-                  </tr>
-                  <tr>
-                    <td>Malware IOC</td>
-                    <td>Detect malicious indicators</td>
-                    <td>Threat Intelligence</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
+              <section id="soc-implementation" class="soc-detail">
+                <h3><span>12</span> — Technical Implementation</h3>
+                <p>La plateforme a été déployée sur VMware, avec les composants conteneurisés via Docker Compose. Le travail a été organisé en six sprints Scrum, de l'intégration SIEM aux scénarios de validation et au reporting technique.</p>
+                <div class="tag-row"><span>VMware</span><span>Docker Compose</span><span>Python</span><span>REST APIs</span><span>Webhooks</span><span>6 Scrum sprints</span></div>
+              </section>
 
-        <section class="skills section-block">
-          <div class="container">
-            <div class="section-heading centered">
-              <span class="eyebrow">Technical Skills</span>
-              <h2>Technical capabilities</h2>
-            </div>
-
-            <div class="skills-grid two-col-grid">
-              <article class="skill-card">
-                <span class="icon">🛡️</span>
-                <h3>Cybersecurity</h3>
-                <ul class="list-stack compact-list">
-                  <li>SIEM</li>
-                  <li>SOAR</li>
-                  <li>SOC / Blue Team</li>
-                  <li>Incident Response</li>
-                  <li>Threat Intelligence</li>
-                  <li>IOC Management</li>
-                  <li>Detection Engineering</li>
-                  <li>IDS / IPS</li>
-                  <li>EDR / XDR</li>
-                  <li>MITRE ATT&amp;CK</li>
-                  <li>Security Automation</li>
+              <section id="soc-lessons" class="soc-detail">
+                <h3><span>13</span> — Lessons Learned</h3>
+                <ul class="soc-lessons-list">
+                  <li>La normalisation des journaux est essentielle pour obtenir des corrélations fiables.</li>
+                  <li>L'enrichissement IOC et la gestion de cas donnent du contexte aux alertes avant la réponse.</li>
+                  <li>La segmentation réseau et la visibilité des actions sont des fondations de la réponse active.</li>
+                  <li>Le suivi des faux positifs, du MTTD et du MTTR aide à améliorer les règles et les workflows.</li>
                 </ul>
-              </article>
+              </section>
 
-              <article class="skill-card">
-                <span class="icon">🌐</span>
-                <h3>Network Security</h3>
-                <ul class="list-stack compact-list">
-                  <li>TCP/IP</li>
-                  <li>Routing &amp; Switching</li>
-                  <li>VLAN</li>
-                  <li>Firewalling</li>
-                  <li>NAT</li>
-                  <li>VPN</li>
-                  <li>DMZ</li>
-                  <li>DNS / DHCP</li>
-                  <li>Network Segmentation</li>
-                  <li>Traffic Analysis</li>
-                  <li>Network Hardening</li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-block">
-          <div class="container">
-            <div class="section-heading centered">
-              <span class="eyebrow">Tools &amp; Technologies</span>
-              <h2>Security stack and operating environment</h2>
-            </div>
-
-            <div class="tool-grid">
-              <div class="tool-card">
-                <h3>SOC &amp; Security</h3>
-                <p>Wazuh • TheHive • Cortex • MISP</p>
-              </div>
-              <div class="tool-card">
-                <h3>Network Security</h3>
-                <p>Palo Alto PA-220 • FortiGate • Wireshark • TShark</p>
-              </div>
-              <div class="tool-card">
-                <h3>Infrastructure</h3>
-                <p>Linux • Windows Server • Active Directory • VMware</p>
-              </div>
-              <div class="tool-card">
-                <h3>Automation</h3>
-                <p>Python • REST API • Webhooks • Docker • Docker Compose</p>
-              </div>
-              <div class="tool-card">
-                <h3>Monitoring</h3>
-                <p>Grafana • Prometheus • Loki</p>
-              </div>
-              <div class="tool-card">
-                <h3>Security Testing</h3>
-                <p>Kali Linux • Nmap • GNS3</p>
-              </div>
+              <section id="soc-documentation" class="soc-detail">
+                <h3><span>14</span> — Documentation / GitHub</h3>
+                <p>Le projet comprend un rapport de validation technique et des rapports d'incident. Consultez mon profil GitHub pour les dépôts et ressources de projet disponibles.</p>
+                <div class="contact-actions">
+                  <a class="btn btn-primary" href="https://github.com/abirhtira" target="_blank" rel="noreferrer">GitHub Profile</a>
+                </div>
+              </section>
             </div>
           </div>
         </section>

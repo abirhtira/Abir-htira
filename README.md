@@ -16,9 +16,14 @@ Le site présente :
 - une section hero avec branding cyber
 - un profil professionnel détaillé
 - les compétences clés en cybersécurité
-- l'expérience et les projets significatifs
+- une section dédiée « Featured Project — SOC & Network Security Platform »
+- l'expérience et les autres projets significatifs
 - les certifications PDF, filtrables par domaine et disponibles à la consultation ou au téléchargement
 - les moyens de contact
+
+## Section SOC Platform
+
+La présentation du projet SOC est organisée en 14 rubriques : Project Overview, Security Architecture, Technology Stack, Detection & Correlation, SOAR Automation, Threat Intelligence, Active Response / IPS, Security Monitoring, Security Scenarios, MITRE ATT&CK, KPIs & Performance, Technical Implementation, Lessons Learned et Documentation / GitHub.
 
 ## Lancer le projet localement
 
